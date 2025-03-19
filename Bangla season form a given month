@@ -1,0 +1,29 @@
+package com.mycompany.task_5;
+import java.util.Scanner;
+
+public class Bangla_season {
+     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter month number (1-12): ");
+        int month = input.nextInt();
+        String season;
+
+        if (month == 4 || month == 5) {
+            season = "Summer ";
+        } else if (month == 6 || month == 7) {
+            season = "Rainy ";
+        } else if (month == 8 || month == 9) {
+            season = "Autumn";
+        } else if (month == 10 || month == 11) {
+            season = "Late Autumn";
+        } else if (month == 12 || month == 1) {
+            season = "Winter ";
+        } else if (month == 2 || month == 3) {
+            season = "Spring";
+        } else {
+            season = "Invalid month! Please enter a number between 1 and 12.";
+        }
+
+        System.out.println("Bangla Season: " + season);
+    }
+}
